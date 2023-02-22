@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayushi Priya porfoilo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dd0fc54bfc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+     <div class="container">
+        <nav>
+           
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I'm <span>Ayushi Priya</span>  <br> from Ranchi, Jharkhand</h1>
+        </div>
+     </div>
+    </div>
+<!--------------------about--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/udaipur_ayu_2.jpg" alt="" height="400px">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit in voluptatum culpa dolorem quis nam sunt quibusdam ullam quo non inventore molestiae autem facere ut similique quisquam, ex cum dolor!</p>
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                     </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span> <br>Designer Web/App interfaces
+                            </li>
+                            <li><span>Web Development</span> <br>Web app Development
+                            </li>
+                            <li><span>App Development</span> <br>Building Android/iOS apps
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span> <br>Designer Web/App interfaces
+                            </li>
+                            <li><span>Web Development</span> <br>Web app Development
+                            </li>
+                            <li><span>App Development</span> <br>Building Android/iOS apps
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>UI/UX</span> <br>Designer Web/App interfaces
+                            </li>
+                            <li><span>Web Development</span> <br>Web app Development
+                            </li>
+                            <li><span>App Development</span> <br>Building Android/iOS apps
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+<!-----------portfolio------------->
+<div id="portfolio">
+ <div class="container">
+    <h1 class="sub-title">Portfolio</h1>
+    <div class="portfolio-list">
+        <div>
+            <h2>Tic tac toe</h2>
+            <p>Tic tac toe game my favourite childhood game, when I was younger I used to play a lot with my brother. I have made this game in which we can have more than three columns and rows , infact we can make the board of length whatever we want.</p>
+             <a class="viewText" href="https://medium.com/@ayushipriya_40647/tic-tac-toe-694a364225ee" target="_blank">View</a>
+        </div>
+        <div>
+            <h2>Snake and ladder game</h2>
+            <p>Snake and ladder game all from scartch in react hooks . Here the straight line represents a ladder and the black one represents a snake.</p>
+             <a class="viewText" href="https://medium.com/@ayushipriya_40647/snake-and-ladder-game-80ab5e3d0676" target="_blank">View</a>
+        </div>
+        <div>
+            <h2>Comment Box Implementation</h2>
+            <p>I am here with my code to in which user can add as much as possible comments and replies to each and every comments.
+
+            </p>
+             <a class="viewText" href="https://medium.com/@ayushipriya_40647/comment-box-implementation-9bf1bdd87ca3" target="_blank">View</a>
+        </div>
+    </div>
+ </div>
+</div>
+
+<!---contact-->
+<div id="contact">
+   <a href="https://www.facebook.com/ayushi.priya.1048" target="_blank"><i class="fa-brands fa-facebook  fa-3x icons"></i></a> 
+   <a href="https://www.linkedin.com/in/ayushi-priya-62662a166/" target="_blank">  <i class="fa-brands fa-linkedin  fa-3x icons"></i></a>
+</div>
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links")
+        var tabContents=document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+          for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+          }
+          for(tabcontent of tabContents){
+            tabcontent.classList.remove("active-tab")
+          }
+          event.currentTarget.classList.add("active-link")
+          document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+</body>
+</html>
