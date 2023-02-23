@@ -12,16 +12,17 @@
     <div id="header">
      <div class="container">
         <nav>
-           
-            <ul>
-                <li><a href="#">Home</a></li>
+          <i id="rightBar" class="fa-solid fa-bars"></i>
+            <ul id="navItem">
+                <i id="xmarkClick" class="fa-sharp fa-solid fa-circle-xmark"></i>
+                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="header-text">
-            <p>UI/UX Designer</p>
+            <!-- <p>UI Developer</p> -->
             <h1>Hi, I'm <span>Ayushi Priya</span>  <br> from Ranchi, Jharkhand</h1>
         </div>
      </div>
@@ -30,12 +31,9 @@
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="about-col-1">
-                    <img src="images/udaipur_ayu_2.jpg" alt="" height="400px">
-                </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit in voluptatum culpa dolorem quis nam sunt quibusdam ullam quo non inventore molestiae autem facere ut similique quisquam, ex cum dolor!</p>
+                     <p>I am a webdeveloper, programmer and maths lover. I like learning new things and implementing them in my projects . I love to learn new frameworks and new updates about javascript, react. I love to travel and dance.</p>
                      <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -43,31 +41,65 @@
                      </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI/UX</span> <br>Designer Web/App interfaces
-                            </li>
                             <li><span>Web Development</span> <br>Web app Development
                             </li>
                             <li><span>App Development</span> <br>Building Android/iOS apps
+                            </li>
+                            <li>
+                                <span>Technology</span>
+                                <br> React , HTML, CSS, Javascript, Redux, ReactNative
                             </li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>UI/UX</span> <br>Designer Web/App interfaces
-                            </li>
-                            <li><span>Web Development</span> <br>Web app Development
-                            </li>
-                            <li><span>App Development</span> <br>Building Android/iOS apps
+                            <li><span> Zupee, Gurgaon Software Engineer Oct 2021 - Present</span> <br>MULTI TABLE TOURNAMENT <p>
+                                 Worked on game play made of ludoboard to make it scalable so that at a time 2^n players can play. Where n is the number of rounds. Around 256 players can also participate in the game and after each and every round , round progression screen comes which contains the info.</p>
+                                <br> PAYMENT PAGE
+                               <p> Worked on the payment page of iOS react native with one senior dev . Integrated Juspay SDK and implemented Payment Methods such as UPI, Card Payment, Net Banking, Quick Pay.
+                                </p>
+
+                                 <br> WITHDRAWAL
+                                <p>
+                                 Worked on the functionality of adding UPI and BANK account , so that users can withdraw their money which they have won to their respective UPI ID and bank account.
+                                </p>
+                                <br>
+                                DELINK POPUP
+                                <p>
+Whenever users have added their bank account or UPI or both with different name and added their KYC with different name then they get a Delink popup on Withdrawal page where in the background their bank or UPI is delinked and they are informed about that.
+</p>
+<br>
+KYC
+<p> Added functionality of KYC on iOS app where users can upload their pan card, aadhar card, driving licence, Voter ID Card and get their KYC done so that they can withdraw and add money. Nudges are also shown to the user for KYC while withdrawing and adding money.
+</p>                               
+</li>
+                            <li><span> OYO, Gurgaon Software Engineer Jan 2020 - Oct 2021</span> <br>Revamp
+                                <p> Revamped whole listing page along with header which includes search widget, date-guest range picker whole homepage of travel-agent website and made them mobile responsive which includes making search widget from scratch and my accounts page, log-in page.
+                           </p>
+                          <br> Chat bot on OYO Website
+<p> Ask Yo! Anything feature which gives the user opportunities to ask anything and modification of name of user and displayed refund status which was shown using a flow chart.
+</p>     
+<br>Lowest Price Guarantee
+<p> Worked with Pegasus team to compare the price of rooms from other Online Travel Agencies with OYO’s and showing the lowest price guarantee banner if it was lowest.                        
+</p>
+<br>One click payment on paypal
+<p> First time users on payment page clicks on paypal payment method and logs in to approve the agreement and select a funding instrument and the payment was done. Second time users just have to click the paypal method for payment. Worked closely with other teams to identify and remove bugs. Participated in Hackathon with idea GuestsVaccinated/onlineCheckin 
+</p>
+</li>
+                            <li><span> AMDOCS, Pune(on-site) Software Engineer Intern May 2019 - July 2019</span> <br>
+                                HACKATHON BETWEEN THREE COLLEGES
+                                <p> We created a website for entertaining existing customers and giving them incentives.( Tech stack-HTML, CSS, Javascript,Nodejs, Mongodb)</p>
                             </li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>UI/UX</span> <br>Designer Web/App interfaces
+                            <li><span>B.Tech BIRLA INSTITUTE OF TECHNOLOGY</span> <br>7.01 CGPA 2016 - 2020
                             </li>
-                            <li><span>Web Development</span> <br>Web app Development
+                            <li><span>Senior Secondary
+                                CBSE</span> <br>95%  2015
                             </li>
-                            <li><span>App Development</span> <br>Building Android/iOS apps
+                            <li><span>Secondary CBSE</span> <br>10 CGPA  2013
                             </li>
                         </ul>
                     </div>
@@ -81,18 +113,18 @@
     <h1 class="sub-title">Portfolio</h1>
     <div class="portfolio-list">
         <div>
-            <h2>Tic tac toe</h2>
-            <p>Tic tac toe game my favourite childhood game, when I was younger I used to play a lot with my brother. I have made this game in which we can have more than three columns and rows , infact we can make the board of length whatever we want.</p>
+            <h2 class="aboutColor">Tic tac toe</h2>
+            <p>Tic tac toe game my favourite childhood game. I have made this game in which we can have more than three columns and rows , infact we can make the board of length whatever we want.</p>
              <a class="viewText" href="https://medium.com/@ayushipriya_40647/tic-tac-toe-694a364225ee" target="_blank">View</a>
         </div>
         <div>
-            <h2>Snake and ladder game</h2>
-            <p>Snake and ladder game all from scartch in react hooks . Here the straight line represents a ladder and the black one represents a snake.</p>
+            <h2 class="aboutColor">Snake and ladder game</h2>
+            <p>Snake and ladder game all from scartch in react hooks .</p>
              <a class="viewText" href="https://medium.com/@ayushipriya_40647/snake-and-ladder-game-80ab5e3d0676" target="_blank">View</a>
         </div>
         <div>
-            <h2>Comment Box Implementation</h2>
-            <p>I am here with my code to in which user can add as much as possible comments and replies to each and every comments.
+            <h2 class="aboutColor">Comment Box Implementation</h2>
+            <p>Comment box similar as facebook or linkedin comment box in which user can add several comments and on each and every  user can reply. I have made this project scalable so that numerous comments can be added in each of the comments.
 
             </p>
              <a class="viewText" href="https://medium.com/@ayushipriya_40647/comment-box-implementation-9bf1bdd87ca3" target="_blank">View</a>
@@ -103,14 +135,24 @@
 
 <!---contact-->
 <div id="contact">
-   <a href="https://www.facebook.com/ayushi.priya.1048" target="_blank"><i class="fa-brands fa-facebook  fa-3x icons"></i></a> 
    <a href="https://www.linkedin.com/in/ayushi-priya-62662a166/" target="_blank">  <i class="fa-brands fa-linkedin  fa-3x icons"></i></a>
+   <div class="mediumColor">
+    Medium
+    <p> <a href="https://medium.com/@ayushipriya_40647" target="_blank" ><i class="fa-brands fa-medium"></i></a></p>
+   
+   </div>
+  
+   <h3 class="gmail">gmail id</h3>
+   <p>priyaayushi614@gmail.com</p>
 </div>
 
 
     <script>
         var tablinks=document.getElementsByClassName("tab-links")
         var tabContents=document.getElementsByClassName("tab-contents")
+        var hamIcon=document.getElementById("rightBar")
+        var navItem=document.getElementById("navItem")
+        var xmarkClick=document.getElementById("xmarkClick")
         function opentab(tabname){
           for(tablink of tablinks){
             tablink.classList.remove("active-link")
@@ -121,6 +163,15 @@
           event.currentTarget.classList.add("active-link")
           document.getElementById(tabname).classList.add("active-tab")
         }
+        hamIcon.addEventListener("click",()=>{
+            console.log("ham icon clicked")
+            hamIcon.style.display="none"
+            navItem.style.display="block"
+        })
+        xmarkClick.addEventListener("click",()=>{
+            hamIcon.style.display="block"
+            navItem.style.display="none"
+        })
     </script>
 </body>
 </html>
